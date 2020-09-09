@@ -13,6 +13,8 @@ src_and_tgt_dirs = get_source_and_target_directories(copy_or_move=copy_or_move_c
 all_or_list = action_all_files_or_specified()
 
 if all_or_list == 'l':
+    # TODO: Implement checks on the txt file, kind of the point of the whole thing.
+    # TODO: Clean this up, it looks dreadful
     print(f"\nDue to time constraints, it was not coded in to ensure the list_of_files.txt file exists or is populated")
     print("If it's not present, since you selected 'l' it will not throw an error to you but it will just do nothing")
     print(f"If it's not there then create list_of_files.txt where app.py exists"
