@@ -24,7 +24,7 @@ if all_or_list == 'l':
 
     print("\n!Make sure you have included the file extensions!")
     list_of_files = []
-    with open('list_of_files.txt', 'r') as txtfile:
+    with open('list_of_files.txt', 'r', encoding='utf-8-sig') as txtfile:
         for line in txtfile.readlines():
             list_of_files.append(line.replace('\n', ''))
     print(f"Files in text file are: {list_of_files}")
